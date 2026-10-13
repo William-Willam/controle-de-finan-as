@@ -11,13 +11,13 @@ Aplicação web para controle de finanças pessoais, construída com **Spring Bo
 3. [Tecnologias](#tecnologias)
 4. [Arquitetura](#arquitetura)
 5. [Modelo de dados](#modelo-de-dados)
-6. [Segurança](#segurança)
-7. [Estratégia de testes](#estratégia-de-testes)
-8. [Convenções do projeto](#convenções-do-projeto)
+6. [Segurança](#seguran%C3%A7a)
+7. [Estratégia de testes](#estrat%C3%A9gia-de-testes)
+8. [Convenções do projeto](#conven%C3%A7%C3%B5es-do-projeto)
 9. [Estrutura de pastas](#estrutura-de-pastas)
 10. [Roadmap (passo a passo)](#roadmap-passo-a-passo)
 11. [Como executar](#como-executar)
-12. [Licença](#licença)
+12. [Licença](#licen%C3%A7a)
 
 ---
 
@@ -48,7 +48,8 @@ Escopo da primeira versão (MVP):
 
 | Camada | Tecnologia |
 | --- | --- |
-| Backend | Java, Spring Boot, Spring Web, Spring Data JPA, Spring Security |
+| Backend | Java 21, Spring Boot 4.0.8, Spring Web (webmvc), Spring Data JPA, Spring Security |
+| Migrations | Flyway |
 | Autenticação | JWT (JSON Web Token) |
 | Banco de dados | PostgreSQL |
 | Frontend | Angular, TypeScript |
@@ -169,8 +170,8 @@ Cada etapa é feita, entendida e validada antes de passar para a próxima.
 
 - [x] **1. Definição do escopo** (funcionalidades do MVP)
 - [x] **2. Modelagem das entidades**
-- [ ] **3. Criação do projeto backend** (Spring Initializr e configuração inicial)
-- [ ] **4. Banco de dados e entidades** (PostgreSQL, JPA)
+- [x] **3. Criação do projeto backend** (Spring Boot 4.0.8, Maven, Java 21)
+- [x] **4. Banco de dados e entidades** (PostgreSQL, Flyway, JPA — Usuario, Conta, Categoria, Lancamento, Orcamento, Meta)
 - [ ] **5. Segurança do backend** (cadastro, login, JWT, Spring Security)
 - [ ] **6. CRUD de contas e categorias**
 - [ ] **7. Lançamentos** (receitas e despesas)
